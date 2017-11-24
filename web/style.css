@@ -1,0 +1,43 @@
+h2
+{    color: brown; text-align: center; list-style-type: none;border-style: groove;} 
+p
+{	text-align: center; font-weight: bold;}
+body
+{
+	background-image: url(https://www.saint-maclou.com/media/catalog/product/cache/1/base%20image/1140x1140/85e4522595efc69f496374d01ef2bf13/3/8/38554_1_p1.jpg);}
+
+#photo
+{margin-left: auto;
+margin-right: auto;
+display: block;
+box-shadow: 1px 1px 12px black; height: 150px;width: 150px;
+}
+@font-face {
+    font-family: 'police titre';
+    src: url(http://ff.static.1001fonts.net/d/e/destain.regular.otf);}
+
+h1 
+{
+    font-family: 'police titre'; text-align: center;
+}
+.bold{font-weight: bold;}
+
+.sidebar
+{
+background-color: grey;
+width: 10%;
+height: 800px;
+float: left;
+text-align: center;border-style: outset;
+}
+
+#conteneur{display: flex;}
+article{margin-left: 10%;}
+
+
+
+footer{text-align: center;margin-top: 50%; font-weight: bold;}
+a:hover{color: green;}
+
+
+ 
