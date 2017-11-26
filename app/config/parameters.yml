@@ -1,6 +1,6 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_host: localhost:8889
+    database_host: 'localhost:8889'
     database_port: null
     database_name: UBERMOOV
     database_user: root

@@ -37,7 +37,6 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
             'Symfony\\Bundle\\AsseticBundle\\' => 29,
             'Symfony\\Bundle\\' => 15,
             'Symfony\\Bridge\\Twig\\' => 20,
-            'Symfony\\Bridge\\Swiftmailer\\' => 27,
             'Symfony\\Bridge\\ProxyManager\\' => 28,
             'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
@@ -48,7 +47,10 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
+            'Psr\\Link\\' => 9,
+            'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
         ),
         'M' => 
@@ -61,6 +63,7 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         ),
         'F' => 
         array (
+            'Fig\\Link\\' => 9,
             'FOS\\UserBundle\\' => 15,
         ),
         'D' => 
@@ -70,6 +73,7 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
+            'Doctrine\\Bundle\\FixturesBundle\\' => 31,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
@@ -132,10 +136,6 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/Twig',
         ),
-        'Symfony\\Bridge\\Swiftmailer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/Swiftmailer',
-        ),
         'Symfony\\Bridge\\ProxyManager\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/ProxyManager',
@@ -164,9 +164,21 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         array (
             0 => __DIR__ . '/..' . '/sensio/distribution-bundle',
         ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Psr\\Link\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/link/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Psr\\Cache\\' => 
         array (
@@ -179,6 +191,10 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         'Incenteev\\ParameterHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
+        ),
+        'Fig\\Link\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
         'FOS\\UserBundle\\' => 
         array (
@@ -203,6 +219,10 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'Doctrine\\Bundle\\FixturesBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-fixtures-bundle',
         ),
         'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
         array (
@@ -250,6 +270,10 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
             'Doctrine\\Common\\Lexer\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'Doctrine\\Common\\DataFixtures' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/data-fixtures/lib',
             ),
             'Doctrine\\Common\\Collections\\' => 
             array (
