@@ -1,10 +1,10 @@
 parameters:
     database_driver:   pdo_sqlsrv
-    database_host:     'tcp:hostname.database.windows.net'
+    database_host:     'eu-cdbr-azure-west-b.cloudapp.net'
     database_port:     ~
-    database_name:     taskapp
-    database_user:     user@hostname
-    database_password: ~
+    database_name:     ubermoov
+    database_user:     b7a4085cf6f621
+    database_password: 52ad81ed
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
@@ -15,5 +15,5 @@ parameters:
     windows_azure_table: UseDevelopmentStorage=true
 
     locale:            en
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            f43e219529c8bdb5d7268b8cccb16d0556604e98
 
