@@ -88,3 +88,5 @@ fos_user:
         sender_name: You
 
 # ...
+web_profiler:
+    toolbar: true
