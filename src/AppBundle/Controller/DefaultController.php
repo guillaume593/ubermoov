@@ -31,7 +31,7 @@ class DefaultController extends Controller
     /**
      * @Route("/google77b5377000d02d5a.html", name="google")
      */
-    public function ShowAction(Request $request)
+    public function testAction(Request $request)
     {
         // replace this example code with whatever you need
         return $this->render('default/google77b5377000d02d5a.html', [
