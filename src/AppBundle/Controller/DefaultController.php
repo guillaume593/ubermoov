@@ -28,6 +28,15 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
-
+    /**
+     * @Route("/google77b5377000d02d5a.html", name="google")
+     */
+    public function listAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/google77b5377000d02d5a.html', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
+        ]);
+    }
 
 }
