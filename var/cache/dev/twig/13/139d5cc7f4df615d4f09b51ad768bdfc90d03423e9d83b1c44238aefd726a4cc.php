@@ -15,11 +15,11 @@ class __TwigTemplate_be4b24758b0dbe5c4bb6342a6943770e5d3b667bb79bd8c5a51438f8fce
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_919bd68f771a58e864428277a6665f72468bf319a601d65de0b0977edabe6e96 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_919bd68f771a58e864428277a6665f72468bf319a601d65de0b0977edabe6e96->enter($__internal_919bd68f771a58e864428277a6665f72468bf319a601d65de0b0977edabe6e96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/userprofil.html"));
+        $__internal_d2b7180381477b78f3c804dfc6096cade0d9021f372df93b132b2967bad3615c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d2b7180381477b78f3c804dfc6096cade0d9021f372df93b132b2967bad3615c->enter($__internal_d2b7180381477b78f3c804dfc6096cade0d9021f372df93b132b2967bad3615c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/userprofil.html"));
 
-        $__internal_c6f232d73bc0719f6197681f6a2437c1f032f0f77b8feefa76518fb5b7be3f10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c6f232d73bc0719f6197681f6a2437c1f032f0f77b8feefa76518fb5b7be3f10->enter($__internal_c6f232d73bc0719f6197681f6a2437c1f032f0f77b8feefa76518fb5b7be3f10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/userprofil.html"));
+        $__internal_31c44375c13d080136e1970fff6c549d14a9cb4103398f0a5700b50ecbb650ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_31c44375c13d080136e1970fff6c549d14a9cb4103398f0a5700b50ecbb650ef->enter($__internal_31c44375c13d080136e1970fff6c549d14a9cb4103398f0a5700b50ecbb650ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/userprofil.html"));
 
         // line 1
         echo "
@@ -127,6 +127,19 @@ class __TwigTemplate_be4b24758b0dbe5c4bb6342a6943770e5d3b667bb79bd8c5a51438f8fce
       </div>
     </nav>
 
+    <div id=\"map\"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyClL7hts1L3gga78eYwLTWO3dBhc3wernk&callback=initMap\"
+    async defer></script>
+
 
     </section>
 
@@ -147,10 +160,10 @@ class __TwigTemplate_be4b24758b0dbe5c4bb6342a6943770e5d3b667bb79bd8c5a51438f8fce
 </html>
 ";
         
-        $__internal_919bd68f771a58e864428277a6665f72468bf319a601d65de0b0977edabe6e96->leave($__internal_919bd68f771a58e864428277a6665f72468bf319a601d65de0b0977edabe6e96_prof);
+        $__internal_d2b7180381477b78f3c804dfc6096cade0d9021f372df93b132b2967bad3615c->leave($__internal_d2b7180381477b78f3c804dfc6096cade0d9021f372df93b132b2967bad3615c_prof);
 
         
-        $__internal_c6f232d73bc0719f6197681f6a2437c1f032f0f77b8feefa76518fb5b7be3f10->leave($__internal_c6f232d73bc0719f6197681f6a2437c1f032f0f77b8feefa76518fb5b7be3f10_prof);
+        $__internal_31c44375c13d080136e1970fff6c549d14a9cb4103398f0a5700b50ecbb650ef->leave($__internal_31c44375c13d080136e1970fff6c549d14a9cb4103398f0a5700b50ecbb650ef_prof);
 
     }
 
@@ -243,6 +256,19 @@ class __TwigTemplate_be4b24758b0dbe5c4bb6342a6943770e5d3b667bb79bd8c5a51438f8fce
         </div>
       </div>
     </nav>
+
+    <div id=\"map\"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyClL7hts1L3gga78eYwLTWO3dBhc3wernk&callback=initMap\"
+    async defer></script>
 
 
     </section>
