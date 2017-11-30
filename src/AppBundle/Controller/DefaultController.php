@@ -41,7 +41,7 @@ class DefaultController extends Controller
     /**
      * @Route("/sitemap.xml", name="sitemap")
      */
-    public function ShowAction(Request $request)
+    public function listAction(Request $request)
     {
         // replace this example code with whatever you need
         return $this->render('default/sitemap.xml', [
