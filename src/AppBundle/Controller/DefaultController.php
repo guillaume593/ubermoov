@@ -38,5 +38,14 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
-
+    /**
+     * @Route("/sitemap.xml", name="sitemap")
+     */
+    public function ShowAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sitemap.xml', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
+        ]);
+    }
 }
