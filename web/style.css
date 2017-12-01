@@ -1,5 +1,5 @@
 h2
-{    color: brown; text-align: center; list-style-type: none;border-style: groove;} 
+{    color: brown; text-align: center; list-style-type: none;border-style: groove;}
 p
 {	text-align: center; font-weight: bold;}
 body
@@ -16,7 +16,7 @@ box-shadow: 1px 1px 12px black; height: 150px;width: 150px;
     font-family: 'police titre';
     src: url(http://ff.static.1001fonts.net/d/e/destain.regular.otf);}
 
-h1 
+h1
 {
     font-family: 'police titre'; text-align: center;
 }
@@ -38,6 +38,3 @@ article{margin-left: 10%;}
 
 footer{text-align: center;margin-top: 50%; font-weight: bold;}
 a:hover{color: green;}
-
-
- 
