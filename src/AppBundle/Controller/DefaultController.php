@@ -19,12 +19,12 @@ class DefaultController extends Controller
         ]);
     }
     /**
-     * @Route("/moncompte", name="moncompte")
+     * @Route("/faq", name="faq")
      */
     public function listAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/userprofil.html', [
+        return $this->render('default/faq.html', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
