@@ -48,4 +48,14 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
+    /**
+     * @Route("/eng", name="homepage-eng")
+     */
+    public function engAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/index-eng.html', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
+        ]);
+    }
 }
