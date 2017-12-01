@@ -1,86 +1,8 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-
-<!DOCTYPE html>
-<html lang="fr">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Se connecter</title>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="{{ asset('login/bootstrap/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('login/font-awesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('login/css/form-elements.css') }}">
-        <link rel="stylesheet" href="{{ asset('login/css/style.css') }}">
-</head>
- <body>
-<div class="top-content">
-
-           <div class="inner-bg">
-               <div class="container">
-                   <div class="row">
-                       <div class="col-sm-8 col-sm-offset-2 text">
-                           <h1><strong>UBERMOOV'</strong><br>Se connecter</h1>
-                           <div class="description">
-                             <p>
-                               Gérez vos options de paiement, parcourez l'historique de vos livraisons et bien plus encore.<br>
-                               Télécharger notre application <a href="https://itunes.apple.com/fr/app/uber/id368677368?mt=8"><strong>UBERMOOV'</strong></a>, commander une livraison en quelques minutes !
-                             </p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="row">
-                       <div class="col-sm-6 col-sm-offset-3 form-box">
-                         <div class="form-top">
-                           <div class="form-top-left">
-                             <h3>Connectez-vous à votre compte</h3>
-                               <p>Entrez votre nom d'utilisateur et votre mot de passe pour vous connecter:</p>
-                           </div>
-                           <div class="form-top-right">
-                             <i class="fa fa-lock"></i>
-                           </div>
-                           </div>
-                           <div class="form-bottom">
-                          <form role="form" action="" method="post" class="login-form">
     {{ form_widget(form) }}
-    <div class="form-group">
     <div>
         <input type="submit" value="{{ 'registration.submit'|trans }}" />
     </div>
-    </div>
 {{ form_end(form) }}
-</form>
-
-</div>
-                   </div>
-               </div>
-               <div class="row">
-                       <div class="col-sm-6 col-sm-offset-3 social-login">
-               <h3>
-<div class="login-help">
-        <a href="/register">Vous n'avez pas encore de compte ?</a> - <a href="/resetting/request">Vous avez oublié votre mot de passe  ?</a>
-        </div></h3> </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Javascript -->
-      <script src="{{ asset('login/js/jquery-1.11.1.min.js') }}"></script>
-      <script src="{{ asset('login/bootstrap/js/bootstrap.min.js') }}"></script>
-      <script src="{{ asset('login/js/jquery.backstretch.min.js') }}"></script>
-      <script src="{{ asset('login/js/scripts.js') }}"></script>
-
-
-
-  </body>
-
-</html>
-
-  </form>
