@@ -69,11 +69,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-        <h6>
-        Bonjour {{ user.prenom }} {{ user.nom }},<br> vous allez pouvoir ici éditer votre profil, consulter vos historiques et factures de livraison.</h6>
-        <br>
-        <br>
-        <br>
+      
           <h5 class="mb-0">
 
 {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
