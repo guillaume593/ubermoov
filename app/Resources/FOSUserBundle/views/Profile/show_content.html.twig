@@ -21,12 +21,13 @@
     <link rel="stylesheet" href="{{ asset('profil/vendor/simple-line-icons/css/simple-line-icons.css') }}">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="{{ asset('profil/css/resume.min.css') }}">
-<a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" alt="logo" src="../logo.jpg"></a>
+
   </head>
 
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" alt="logo" src="../logo.jpg"></a>
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Mon Compte - UBERMOOV'</span>
         <span class="d-none d-lg-block">
@@ -70,6 +71,7 @@
         <div class="my-auto">
         <h5>
         Bonjour {{ user.prenom }} {{ user.nom }},<br> vous allez pouvoir ici éditer votre profil, consulter vos historiques et factures de livraison.</h5>
+        <br>
           <h5 class="mb-0">
 
 <div class="fos_user_user_show">
