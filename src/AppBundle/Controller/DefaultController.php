@@ -29,6 +29,16 @@ class DefaultController extends Controller
         ]);
     }
     /**
+     * @Route("/faq_eng", name="faq_eng")
+     */
+    public function faqAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/faq_eng.html', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
+        ]);
+    }
+    /**
      * @Route("/google77b5377000d02d5a.html", name="google")
      */
     public function ShowAction(Request $request)
