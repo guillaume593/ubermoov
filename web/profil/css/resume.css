@@ -8,7 +8,7 @@ body {
   padding-top: 54px;
   color: #868e96; }
 
-   @font-face{font-family: 'police titre'; src: url(../Raleway/Raleway-Regular.ttf);}
+@font-face{font-family: 'police titre'; src: url(/Raleway/Raleway-Regular.ttf);}
 
 @media (min-width: 992px) {
   body {
