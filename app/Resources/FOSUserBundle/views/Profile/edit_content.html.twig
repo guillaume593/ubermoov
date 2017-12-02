@@ -1,4 +1,80 @@
 {% trans_default_domain 'FOSUserBundle' %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mon Compte</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ asset('profil/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('profil/vendor/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('profil/vendor/devicons/css/devicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('profil/vendor/simple-line-icons/css/simple-line-icons.css') }}">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ asset('profil/css/resume.min.css') }}">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="/"><img class="logo" alt="logo" src="../logo.jpg"></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Mon Compte - UBERMOOV'</span>
+        <span class="d-none d-lg-block">
+
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../profil/img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Mon profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Mon historique</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Mes factures</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link js-scroll-trigger" href="/">  <div class="nav-link js-scroll-trigger">
+      {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+          <a href="{{ path('fos_user_security_logout') }}">
+              {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+          </a>
+      {% else %}
+          <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+      {% endif %}
+    </div></a>
+</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+        <h6>
+        Bonjour {{ user.prenom }} {{ user.nom }},<br> vous allez pouvoir ici éditer votre profil, consulter vos historiques et factures de livraison.</h6>
+        <br>
+        <br>
+        <br>
+          <h5 class="mb-0">
 
 {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
     {{ form_widget(form) }}
@@ -7,3 +83,129 @@
     </div>
 
 {{ form_end(form) }}
+
+</div></div>
+
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Mon historique</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Livraison #1</h3>
+              <div class="subheading mb-3">Paris - 75017</div>
+              <p>Volume total :<br>
+              Temps de livraison :<br>
+              Type de véhicule: <br>
+              Nom du livreur : <br>
+              Evaluation :<br>
+              Total de :  </p>
+
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">14 Septembre 2017 - 14h23</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Livraison #2</h3>
+              <div class="subheading mb-3">Paris - 75020</div>
+              <p>Volume total :<br>
+              Temps de livraison :<br>
+              Type de véhicule: <br>
+              Nom du livreur : <br>
+              Evaluation :<br>
+              Total de :  </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">23 Octobre 2017 - 11h23</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Livraison #3</h3>
+              <div class="subheading mb-3">Paris - 75008</div>
+              <p>Volume total :<br>
+              Temps de livraison :<br>
+              Type de véhicule: <br>
+              Nom du livreur : <br>
+              Evaluation :<br>
+              Total de :  </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2 Décembre 2017 - 16h03</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Livraison #4</h3>
+              <div class="subheading mb-3">Paris - 75004</div>
+              <p>Volume total :<br>
+              Temps de livraison :<br>
+              Type de véhicule: <br>
+              Nom du livreur : <br>
+              Evaluation :<br>
+              Total de :  </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">11 Décembre 2017 - 17h23</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Mes factures</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Facture #1</h3>
+              <div class="subheading mb-3">Paris - 75017</div>
+              <div><a href="https://www.w3schools.com/html/">Votre facture est disponible</a></div>
+
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">14 Septembre 2017 - 14h23</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Facture #2</h3>
+              <div class="subheading mb-3">Paris - 75020</div>
+              <div><a href="https://www.w3schools.com/html/">Votre facture est disponible</a></div>
+
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">23 Octobre 2017 - 11h23</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ asset('profil/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('profil/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('profil/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('profil/js/resume.min.js') }}"></script>
+
+  </body>
+
+</html>
