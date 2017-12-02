@@ -109,9 +109,9 @@ section.resume-section {
   background-color: #FFFFFF !important; }
 
 .text-primary {
-  color: #FFFFFF !important; }
+  color: #black !important; }
 
 a {
-  color: #FFFFFF; }
+  color: #black; }
   a:hover, a:focus, a:active {
-    color: #FFFFFF; }
+    color: #C6C6C6; }
