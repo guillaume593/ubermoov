@@ -68,4 +68,14 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
+    /**
+     * @Route("/robots.txt", name="robots")
+     */
+    public function robotAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/robots.txt', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
+        ]);
+    }
 }
