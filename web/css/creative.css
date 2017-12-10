@@ -204,7 +204,6 @@ header.masthead {
   .portfolio-box:focus {
     outline: none; }
   @media (min-width: 768px) {
-    .logo{width:30%;height:30%;right: 50%;}
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
       font-size: 16px; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
