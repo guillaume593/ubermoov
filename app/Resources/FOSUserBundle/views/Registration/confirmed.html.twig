@@ -136,7 +136,12 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Le Meilleur Moyen De Se Faire Livrer.</strong>
+              <strong>{% block fos_user_content %}
+                  <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+                  {% if targetUrl %}
+                  <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
+                  {% endif %}
+              {% endblock fos_user_content %}</strong>
             </h1>
             <hr>
           </div>
@@ -161,10 +166,5 @@ ga('send', 'pageview');
         </div>
       </div>
     </header>
-{% block fos_user_content %}
-    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
-    {% if targetUrl %}
-    <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
-    {% endif %}
-{% endblock fos_user_content %}
+
 {% endblock %}
