@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: http://ubermoov.azurewebsites.net/sitemap.xml
+Sitemap: http://uber-moov.azurewebsites.net/sitemap.xml

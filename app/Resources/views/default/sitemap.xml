@@ -7,38 +7,38 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://ubermoov.azurewebsites.net/</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://ubermoov.azurewebsites.net/faq</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/faq</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://ubermoov.azurewebsites.net/login</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/login</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://ubermoov.azurewebsites.net/eng</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/eng</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://ubermoov.azurewebsites.net/register/</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/register/</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://ubermoov.azurewebsites.net/faq_eng</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/faq_eng</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://ubermoov.azurewebsites.net/resetting/request</loc>
-  <lastmod>2017-12-13T12:21:32+00:00</lastmod>
+  <loc>http://uber-moov.azurewebsites.net/resetting/request</loc>
+  <lastmod>2017-12-13T23:28:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 </urlset>
