@@ -129,17 +129,23 @@ ga('send', 'pageview');
       </div>
 
     </nav>
-<body background="../img/backgrounds/fond.jpg">
+<body>
 <br>
 <br>
 <br>
 <br>
+<div class="videoContent">
+			<span></span>
+			<video width="" height="" poster="https://www.supervan.fr/assets/images/visuels/visuel-home-video.jpg" preload="auto" loop autoplay muted>
+				<source src="../img/backgrounds/video-home-opt.mp4" type="video/mp4" />
+
+
             <div class="confirmation">
             <h1>
               <strong>{% block fos_user_content %}
                   <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
                   {% if targetUrl %}
-                  
+
                   {% endif %}
               {% endblock fos_user_content %}</strong>
 
@@ -170,6 +176,8 @@ ga('send', 'pageview');
             </div>
             </div>
 </h1>
+</video>
+</div>
     </body>
 
 {% endblock %}
