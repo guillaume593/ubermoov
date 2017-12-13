@@ -131,8 +131,8 @@ ga('send', 'pageview');
     </nav>
 
 
-    <header class="masthead text-center text-white d-flex">
 
+          <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
               <strong>{% block fos_user_content %}
                   <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
@@ -142,6 +142,7 @@ ga('send', 'pageview');
               {% endblock fos_user_content %}</strong>
             </h1>
             <hr>
+          </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5"><meta property="og:title" content="UBERMOOV', Service de livraison">
           <meta property="og:site_name" content="UBERMOOV'">
@@ -161,6 +162,5 @@ ga('send', 'pageview');
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#Fonctionnement">En savoir plus</a>
           </div>
     
-    </header>
 
 {% endblock %}
