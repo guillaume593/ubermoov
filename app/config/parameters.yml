@@ -2,7 +2,7 @@
 parameters:
     database_driver: pdo_mysql
     database_host: eu-cdbr-azure-west-b.cloudapp.net
-    database_port: null
+    database_port: 3306
     database_name: ubermoov
     database_user: b82f29884f3074
     database_password: 350abeff
