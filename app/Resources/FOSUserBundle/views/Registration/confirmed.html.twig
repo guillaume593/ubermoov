@@ -131,14 +131,14 @@ ga('send', 'pageview');
     </nav>
 <body background="../img/backgrounds/fond.jpg">
 
-            <h1 class="text-uppercase">
+            <div class="confirmation">
               <strong>{% block fos_user_content %}
                   <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
                   {% if targetUrl %}
                   <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
                   {% endif %}
               {% endblock fos_user_content %}</strong>
-            </h1>
+            </div>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
