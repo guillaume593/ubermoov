@@ -4,8 +4,8 @@ parameters:
     database_host: eu-cdbr-azure-west-b.cloudapp.net
     database_port: null
     database_name: ubermoov
-    database_user: b7a4085cf6f621
-    database_password: 52ad81ed
+    database_user: be21de15e69b30
+    database_password: c703947f
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
