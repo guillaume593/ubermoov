@@ -2,4 +2,6 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+Allow: /images
+Allow: /archives
 Sitemap: http://uber-moov.azurewebsites.net/sitemap.xml
