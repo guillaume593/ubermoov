@@ -51,28 +51,36 @@ ga('send', 'pageview');
 
 <link rel="stylesheet" href="{{ asset('css/creative.min.css') }}" />
   </head>
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "La qualité de service sur UBERMOOV'",
-    "image": "http://uber-moov.azurewebsites.net/app.png",
-    "description": "Présentation de nos services.",
-    "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4",
-    "reviewCount": "276",
-    "bestRating": "5",
-    "worstRating": "1"
+  <script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "UBERMOOV'",
+  "url": "http://uber-moov.azurewebsites.net",
+  "logo": "http://uber-moov.azurewebsites.net/img/logo.jpg",
+  "image": "http://uber-moov.azurewebsites.net/img/app.png",
+  "description": "UberMoov est une solution digitale via une application qui a pour but de faciliter le transport de colis ou de plis. Avec cette application, la personne désirant transporter quelque chose d’un point A à un point B aura simplement besoin d’ouvrir cette application, prendre une photo du colis, valider le type de transporteur proposé par l’application et indiquer son point de départ et d'arrivée.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Boulevard du Fort de Vaux, Paris",
+    "addressLocality": "PARIS",
+    "addressRegion": "Ile de France ",
+    "postalCode": "75017",
+    "addressCountry": "FRANCE"
   },
-    "url": "http://uber-moov.azurewebsites.net/",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-401-555-1212",
-      "contactType": "Customer service"
-    }
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "48.892789",
+    "longitude": "2.303242"
+  },
+  "openingHours": "Mo, Tu, We, Th, Fr 09:00-20:00 Sa 10:00-19:00",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "01 45 32 93 02",
+    "contactType": "Service client"
   }
-  </script>
+}
+ </script>
 <noscript>Your browser does not support JavaScript!</noscript>
 
   <body id="page-top">
