@@ -53,6 +53,7 @@
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
     {{ form_widget(form) }}
     <div>
+      <label><input type="checkbox" name="valid" required> J'accepte les conditions générales de vente</label>
         <input type="submit" value="{{ 'registration.submit'|trans }}" />
     </div>
 {{ form_end(form) }}
